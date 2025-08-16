@@ -5,14 +5,7 @@ from github import Github
 from dotenv import load_dotenv
 import logging
 
-logging.basicConfig(
-    level=logging.INFO,  # Change to DEBUG for more details
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    handlers=[
-        logging.FileHandler("pr_review_bot.log"),  # Save logs to file
-        logging.StreamHandler()  # Show logs in console
-    ]
-)
+
 
 
 
@@ -144,3 +137,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
