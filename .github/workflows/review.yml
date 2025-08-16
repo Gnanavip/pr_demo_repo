@@ -7,6 +7,9 @@ on:
 jobs:
   review:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write   # 👈 allows commenting on PRs
+      contents: read
 
     steps:
       - name: Checkout repo
